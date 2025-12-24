@@ -4,15 +4,17 @@ Idle Tracker Application (Java + C++ DLL Integration)
 Idle Tracker is a Java + Spring Boot + JavaFX desktop application that monitors system idle activity using a native C++ DLL on Windows.
 
 The application demonstrates:
+```
     -System-level thinking
     -Java ↔ C++ native integration
     -Background task execution
     -UI + backend separation
     -Clean shutdown handling
-
+```
 This project was built as part of a technical assignment focusing on working logic and clarity rather than UI design.
 
 ## Tech Stack
+```
 Layer	          Technology
 Language	      Java 17+
 Backend	          Spring Boot (Maven)
@@ -20,8 +22,9 @@ UI	              JavaFX
 Native Code	      C++ (Windows DLL)
 OS	              Windows
 Java ↔ C++	      JNA (Java Native Access)
-
+```
 ## Project Structure
+```
 idletracker/
 ├── pom.xml
 ├── IdleTracker.dll
@@ -40,8 +43,9 @@ idletracker/
     └── fxml/
         ├── login.fxml
         └── dashboard.fxml
-
+```
 ## Functional Flow
+```
 1️⃣ Application Startup
     -Application starts using Spring Boot
     -Launches JavaFX UI
@@ -88,7 +92,7 @@ When idle is detected:
 6️⃣ API Calls
 After detecting idle:
     -Java sends two REST API calls
-
+```
 ## Request Payload (Json)
 {
 "userEmailId": "test@example.com",
@@ -108,12 +112,13 @@ Endpoints are logged only; no real request is sent.
 
 ## Prerequisites
 System Requirements
+```
     -Windows OS
     -Java 17+
     -Maven
     -Visual Studio (C++ Desktop Development)
     -Git
-
+```
 ## Steps to Build C++ DLL
 1. Open Visual Studio
 2. Create:
@@ -162,6 +167,8 @@ System Requirements
     -Focus is on logic, integration, and clarity
 
 ## Author
+```
 Subhanshu Chaurasiya
 BTech CSE
 Backend / Java Developer
+```
